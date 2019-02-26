@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  parallel:
+    build:
+      context: ./
+      # cache_from: 
+      #   - sarkedev/php-parallel:alpine
+    volumes:
+      - "./:/code"

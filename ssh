@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec -it parallel-php_parallel_1 /bin/sh
