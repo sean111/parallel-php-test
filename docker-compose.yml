@@ -3,7 +3,7 @@ services:
   parallel:
     build:
       context: ./
-      # cache_from: 
-      #   - sarkedev/php-parallel:alpine
+      cache_from:
+        - php:7.3-zts-alpine
     volumes:
       - "./:/code"

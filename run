@@ -1,0 +1,5 @@
+#!/bin/sh
+find ./src/ -name *.php | while read line; do
+    echo "Running $line"
+    time php $line
+done

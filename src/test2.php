@@ -1,6 +1,9 @@
 <?php
+if (!extension_loaded('parallel')) {
+    die('Parallel PHP required' . PHP_EOL);
+}
 
-$dir = __DIR__ . '/images/test2/';
+$dir = __DIR__ . '/../images/test2/';
 $urlBase = 'https://api.adorable.io/avatars/285/test2-';
 $runs = 100;
 
